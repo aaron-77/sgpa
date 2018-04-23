@@ -27,5 +27,5 @@ public interface DocenteI {
   boolean agregaDocente(Docente docente) throws SQLException;
   boolean eliminaDocente(int idDocente) throws SQLException;
   boolean actualizaDocente(int idDocente) throws SQLException;
-    
+    //comentario de prueba git
 }
