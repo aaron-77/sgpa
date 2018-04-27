@@ -202,12 +202,5 @@ public class DocenteDAO implements DocenteI {
     return true;
   }
 
-  
-
- 
-
-  
-    
-   
    
 }

@@ -5,10 +5,21 @@
  */
 package sgpaDomain;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 /**
  *
  * @author aaron
  */
-public class validacionEstructura {
+public class SgpaValidadorDatosTest {
+  
+  public SgpaValidadorDatosTest() {
+  }
+
+  @Test
+  public void testSomeMethod() {
+    fail("The test case is a prototype.");
+  }
   
 }

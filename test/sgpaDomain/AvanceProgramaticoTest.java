@@ -5,15 +5,21 @@
  */
 package sgpaDomain;
 
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
  * @author aaron
  */
-@RunWith(Suite.class)
-@Suite.SuiteClasses({sgpaDomain.DocenteTest.class})
-public class SgpaDomainSuite {
+public class AvanceProgramaticoTest {
+  
+  public AvanceProgramaticoTest() {
+  }
+
+  @Test
+  public void testSomeMethod() {
+    fail("The test case is a prototype.");
+  }
   
 }

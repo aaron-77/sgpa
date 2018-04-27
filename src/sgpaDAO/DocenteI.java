@@ -19,7 +19,7 @@ public interface DocenteI {
   List<Docente> buscaDocentesPorNombre(String nombre) throws SQLException;
   Docente obtenDocentePorId(int idDocente) throws SQLException;
   Docente obtenDocentePorMatricula(String matricula) throws SQLException;
-  List<Docente> obtenerTodosDocentes() throws SQLException;
+  List<Docente>obtenerTodosDocentes() throws SQLException;
   List<Docente>obtenerDocentesAcademia(int id) throws SQLException;
   boolean elaborarPlanDeCurso (PlanDeCurso planDeCurso) throws SQLException;
   boolean editarPlanDeCurso (PlanDeCurso planDeCurso) throws SQLException;

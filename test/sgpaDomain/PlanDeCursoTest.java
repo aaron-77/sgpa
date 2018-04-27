@@ -5,10 +5,21 @@
  */
 package sgpaDomain;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 /**
  *
  * @author aaron
  */
-public class validacionCampos {
+public class PlanDeCursoTest {
+  
+  public PlanDeCursoTest() {
+  }
+
+  @Test
+  public void testSomeMethod() {
+    fail("The test case is a prototype.");
+  }
   
 }
