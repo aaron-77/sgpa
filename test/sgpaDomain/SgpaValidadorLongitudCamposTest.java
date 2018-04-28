@@ -31,6 +31,7 @@ public class SgpaValidadorLongitudCamposTest {
     }
     docente.setNombre(nombreGrande);
     docente.setMatricula("S17028393");
+    docente.setGradoEstudio("thegrado");
     validador.sgpaValidarLongitudCampos(docente);
     int longitudObtenida = validador.tamanoNombreTruncado;
     System.out.println("Longitud esperada: "+longitudEsperada+" Longitud obtenida: "+longitudObtenida+" Longitud Original:  "+nombreGrande.length());
@@ -50,6 +51,17 @@ public class SgpaValidadorLongitudCamposTest {
     docente.setGradoEstudio(gradoDeEstudioLargo);
     validador.sgpaValidarLongitudCampos(docente);
     assertTrue("Validacion grado aprobada: ",validador.resultadoValidacionGrado);
+  }
+  
+  @Test
+  public void probarCampoGrande(){
+    SgpaValidadorLongitudCampos validador = new SgpaValidadorLongitudCampos();
+    AvanceProgramatico avance = new AvanceProgramatico();
+    PlanDeCurso plan = new PlanDeCurso();
+    plan.setTemas("introduccion a la contruccionde software\nprubas unitarias");
+    plan.setTecnicaDidactica("retroalimentacion y trabajo autonomo");
+    
+  
   }
   
   

@@ -33,11 +33,10 @@ public class SgpaValidadorLongitudCampos {
   /*Metodo que realiza la vadicacion de todos los campos*/
   public boolean sgpaValidarLongitudCampos(Docente docente) {
     nombreTruncado = validarTruncarLongitudNombre(docente.getNombre());
-    validarLongitudMatricula(docente.getMatricula());
-    validarLongitudGradoEstudio(docente.getGradoEstudio());
-   
+    boolean resultadoValidacionTotal = validarLongitudMatricula(docente.getMatricula()) 
+                                      && validarLongitudGradoEstudio(docente.getGradoEstudio());
     docente.setNombre(nombreTruncado);
-    return resultadoValidacionMatricula;
+    return resultadoValidacionTotal;
   }
      
   /**trunca el nombre si es mayor a TAMANO_MAXIMO_NOMBRE*/
@@ -65,7 +64,7 @@ public class SgpaValidadorLongitudCampos {
     return resultadoValidacionMatricula;    
   }
   //verifica qye se cumpla el tamaño maximo para el campo grado de estudio
-  private boolean validarLongitudGradoEstudio(String gradoDeEstudio){
+  private boolean validarLongitudGradoEstudio(String gradoDeEstudio) {
     resultadoValidacionGrado = true;
     if(gradoDeEstudio.length()>TAMANO_MAXIMO_GRADO_ESTUDIO) {
       resultadoValidacionGrado = false;
@@ -73,7 +72,7 @@ public class SgpaValidadorLongitudCampos {
     return resultadoValidacionGrado;
   }
   
-  private boolean revisarLongitudCamposLongitudGrande(String campo){
+  private boolean revisarLongitudCamposLongitudGrande(String campo) {
     resultadoValidacionCampoGrande = true;
     if(campo.length()>TAMANO_MAXIMO_CAMPO_GRANDE){
       resultadoValidacionGrado = false;
