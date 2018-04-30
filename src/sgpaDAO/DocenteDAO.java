@@ -157,7 +157,7 @@ public class DocenteDAO implements DocenteI {
 
   @Override
   public boolean agregaDocente(Docente docente) throws SQLException {
-     listaDocentes= new ArrayList<>();
+    listaDocentes= new ArrayList<>();
     query="INSERT INTO docente  (nombre,matricula,gradoDeEstudio)(?,?,?)";
     connection=DataBase.getDataBaseConnection();
     PreparedStatement statement=connection.prepareStatement(query);
